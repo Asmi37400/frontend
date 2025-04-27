@@ -1,0 +1,105 @@
+body{
+    padding:0px;
+    
+}
+p{
+  color:black;
+  font-weight: bolder;
+}
+.navbar{
+    background-color:black;
+    overflow: hidden;
+    position: sticky;
+    top: 0%;
+  }
+   .navbar a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 12px;
+    font-size: 15px;
+    text-decoration: none;
+    
+   
+   }
+   .navbar a:hover{
+    background-color:wheat;
+    color:black;
+   }
+   .header{
+    text-align: center;
+    color:maroon;
+   }
+  .home{
+    display:flex;
+
+     }
+     .leftcontent{
+     border:2px,solid,rgb(194, 2, 34);
+     padding: 20px;
+     text-align: center;
+ }
+     .rightcontent{
+      padding: 20px;
+     }
+     img{
+      height:100%;
+      width:100%;
+     }
+     .form{
+      border:2px,block,black;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+     }
+     .contact{
+      text-align: center;
+     }
+.button{
+  background-color: rgb(136, 136, 136);
+  color: rgb(38, 228, 38);
+  width:100px;
+}
+.input{
+width:400px;
+}
+.footer{
+  margin-top: 30px;
+  background-color:black;
+  text-align: center;
+  padding: 10px;
+}
+.name{
+  color: white;
+  size:20px;
+}
+.link{
+  text-decoration: none;
+  color: rgb(167, 50, 7);
+}
+footer a:hover{
+color: rgb(228, 23, 57);
+}
+.project-layout{
+  display:flex;
+ 
+ justify-content: center;
+ gap: 15px;
+ flex-wrap: wrap;
+  }
+  .project-card{
+    padding: 20px;
+width: 250px;
+height:100%;
+background-color: gainsboro;
+  }
+.lav{
+    border-radius: 50%;
+    height:200px ;
+    width:200px ;
+    
+}
+.special{
+    display: flex;
+}
