@@ -14,7 +14,7 @@ p{
   }
    .navbar a{
     float: left;
-    color: #f2f2f2;
+    color: #f2f2f2; 
     text-align: center;
     padding: 10px 12px;
     font-size: 15px;
@@ -22,9 +22,20 @@ p{
     
    
    }
+   .navbar a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    margin-top: 5px;
+    background-color: maroon;
+   }
+   .navbar a:hover::after{
+    width: 100%;
+   }
    .navbar a:hover{
-    background-color:wheat;
-    color:black;
+    
+    color:red;
    }
    .header{
     text-align: center;
@@ -102,4 +113,5 @@ background-color: gainsboro;
 }
 .special{
     display: flex;
+}
 }
