@@ -7,36 +7,87 @@ p{
   font-weight: bolder;
 }
 .navbar{
-    background-color:black;
-    overflow: hidden;
-    position: sticky;
-    top: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:pink;
+  padding:10px 20px;
+  color: black;
   }
-   .navbar a{
-    float: left;
-    color: #f2f2f2; 
-    text-align: center;
-    padding: 10px 12px;
-    font-size: 15px;
+  
+  .navbar .logo {
+    font-size: 24px;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
     text-decoration: none;
-    
-   
-   }
-   .navbar a::after{
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    margin-top: 5px;
-    background-color: maroon;
-   }
-   .navbar a:hover::after{
-    width: 100%;
-   }
-   .navbar a:hover{
-    
-    color:red;
-   }
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #007bff;
+  }
+  
+  /* Hamburger styles */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background:red;
+    transition: 0.3s;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #444;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      padding: 10px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  }
+    .nav-links a:hover {
+      color: #007bff;
+    }
+  .navbar a::after{
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background-color: rgb(255, 178, 34);
+      margin-top: 5px;
+  }
+  .navbar a:hover::after{
+      width: 100%;
+  }
+  
    .header{
     text-align: center;
     color:maroon;
@@ -105,7 +156,11 @@ width: 250px;
 height:100%;
 background-color: gainsboro;
   }
-.lav{
+  .project-card:hover{
+   
+background-color: rgb(233, 169, 169);
+  }
+.lav{/*abt me ko pic*/
     border-radius: 50%;
     height:200px ;
     width:200px ;
@@ -114,4 +169,17 @@ background-color: gainsboro;
 .special{
     display: flex;
 }
+.card{
+  padding: 10px;
+  height: 100px;
+  width: 150px;
+}
+.card :hover{
+  background-color: #8d3c3c
+ ;
+}
+.sd{
+  text-align: center;
+  background-color: #05cece;
+  padding: 50px;
 }
