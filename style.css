@@ -143,24 +143,7 @@ width:400px;
 footer a:hover{
 color: rgb(228, 23, 57);
 }
-.project-layout{
-  display:flex;
- 
- justify-content: center;
- gap: 15px;
- flex-wrap: wrap;
-  }
-  .project-card{
-    padding: 20px;
-width: 250px;
-height:100%;
-background-color: gainsboro;
-  }
-  .project-card:hover{
-   
-background-color: rgb(233, 169, 169);
-  }
-.lav{/*abt me ko pic*/
+.lav{
     border-radius: 50%;
     height:200px ;
     width:200px ;
@@ -168,6 +151,12 @@ background-color: rgb(233, 169, 169);
 }
 .special{
     display: flex;
+}
+.layout{
+  display: flex;
+  justify-content: center;
+  background-color: darkslategrey;
+
 }
 .card{
   padding: 10px;
@@ -178,8 +167,26 @@ background-color: rgb(233, 169, 169);
   background-color: #8d3c3c
  ;
 }
+
 .sd{
   text-align: center;
   background-color: #05cece;
   padding: 50px;
+}
+.project-layout{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  
+}
+.project-card{
+  width: 190px;
+  height:100%;
+  padding:20px;
+  background-color:gray;
+}
+.projects h1{
+  text-align: center;
 }
