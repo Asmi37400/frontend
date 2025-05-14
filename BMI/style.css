@@ -1,0 +1,24 @@
+.form-div{
+    border: 2px block black;
+    width: 300px; 
+    height: 100%;
+    margin: 60px auto;
+border-radius: 8%;
+background-color: blanchedalmond;
+box-shadow: 0 0 60px rgba(255, 0, 0, 0.5);
+}
+.BMI-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    
+}
+.BMI-form input{
+    padding:5px;
+}
+.BMI-form button{
+    background-color: black;
+    color: white;
+    padding: 18px;
+}
